@@ -7,16 +7,6 @@
     <% if (player) { %>
         <form class="add-player-form" action="" method="post" enctype="multipart/form-data">
             <div class="form-row">
-            <!--
-                <div class="form-group col-md-4">
-                    <label for="first-name">First Name</label>
-                    <input type="text" class="form-control" name="first_name" id="first-name" value="<%= player.first_name %>" required>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" id="last-name" value="<%= player.last_name %>" required>
-                </div>
-                -->
                 <div class="form-group col-md-4">
                     <label for="username">Name</label>
                     <input type="text" class="form-control" name="name" id="name" value="<%= player.name %>" required disabled title="name can't be changed">
@@ -35,12 +25,6 @@
                         <option>Centre Back</option>
                         <option>Right Back</option>
                         <option>Left Back</option>
-                        <option>Defensive Midfielder</option>
-                        <option>Central Midfielder</option>
-                        <option>Attacking Midfielder</option>
-                        <option>Right Wing Forward</option>
-                        <option>Left Wing Forward</option>
-                        <option>Striker</option>
                     </select>
                 </div>
             </div>
